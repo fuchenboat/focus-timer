@@ -19,6 +19,9 @@ if errorlevel 1 goto :error
 echo [3/3] 正在打包，请稍候 ...
 "%PY%" -m PyInstaller --noconfirm --clean --onefile --windowed ^
     --name "时间专注助手" ^
+    --distpath "." ^
+    --workpath "build" ^
+    --specpath "build" ^
     --icon "assets\icon.ico" ^
     --add-data "assets;assets" ^
     main.py
@@ -26,7 +29,7 @@ if errorlevel 1 goto :error
 
 echo.
 echo ============================================
-echo  打包完成：dist\时间专注助手.exe
+echo  打包完成：时间专注助手.exe（项目根目录）
 echo  双击该 exe 即可运行，数据保存在同目录 data 文件夹
 echo ============================================
 pause
