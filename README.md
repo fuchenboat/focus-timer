@@ -2,7 +2,7 @@
 
 一个 Windows 桌面端的时间专注 / 计时记录小工具。双击 exe 即可运行，数据以 JSON 格式保存在本地，不联网、不上传。
 
-**直接使用**：下载仓库根目录的 `时间专注助手.exe`，双击即可运行，无需安装 Python。首次运行会在 exe 同级目录生成 `data` 文件夹存放记录。
+**直接使用**：到 [Releases](https://github.com/fuchenboat/focus-timer/releases) 下载 `focus-timer.exe`，双击即可运行，无需安装 Python。首次运行会在 exe 同级目录生成 `data` 文件夹存放记录。
 
 ## 功能
 
@@ -40,7 +40,7 @@ python main.py
 双击 build.bat
 ```
 
-首次运行会自动创建 `.venv` 并安装依赖，打包产物 `时间专注助手.exe` 直接输出到项目根目录，双击即可运行。
+首次运行会自动创建 `.venv` 并安装依赖，打包产物 `focus-timer.exe` 直接输出到项目根目录，双击即可运行。
 
 ## 数据文件
 
@@ -78,7 +78,7 @@ data/
 
 ```
 时间专注助手/
-├── 时间专注助手.exe         打包好的程序，双击即可运行
+├── focus-timer.exe          打包产物（通过 Releases 发布，不纳入版本控制）
 ├── main.py                  程序入口
 ├── build.bat                一键打包脚本（产物输出到根目录）
 ├── requirements.txt

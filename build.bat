@@ -18,7 +18,7 @@ if errorlevel 1 goto :error
 
 echo [3/3] 正在打包，请稍候 ...
 "%PY%" -m PyInstaller --noconfirm --clean --onefile --windowed ^
-    --name "时间专注助手" ^
+    --name "focus-timer" ^
     --distpath "." ^
     --workpath "build" ^
     --specpath "build" ^
@@ -29,7 +29,7 @@ if errorlevel 1 goto :error
 
 echo.
 echo ============================================
-echo  打包完成：时间专注助手.exe（项目根目录）
+echo  打包完成：focus-timer.exe（项目根目录）
 echo  双击该 exe 即可运行，数据保存在同目录 data 文件夹
 echo ============================================
 pause
